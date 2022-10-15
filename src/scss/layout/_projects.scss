@@ -1,0 +1,97 @@
+.projects {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 9.5rem;
+    row-gap: 8rem;
+
+
+    .projects__desc {
+        width: 90%;
+        font-family: $font__terc;
+        color: $gray__color;
+        font-weight: 300;
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+        line-height: 21px;
+        margin-left: 2rem;
+        margin-top: 1.4rem;
+
+    }
+}
+
+.subtitle {
+    font-family: $font__sec;
+    font-size: 4.8rem;
+    font-weight: 600;
+    color: $gral__color;
+    margin-bottom: 8rem;
+}
+
+.subtitle:first-of-type {
+    margin-top: 14rem;
+}
+
+
+.project {
+    background-color: transparent;
+
+    &:hover {
+        background-color: $blue__dark;
+    }
+
+}
+
+.subtitle__project {
+    margin-top: 2.4rem;
+    margin-bottom: 0;
+    margin-left: 2rem;
+    font-family: $font__prin;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: $gral__color;
+}
+
+.projects__techno {
+    margin-top: .9rem;
+    margin-left: 2rem;
+    font-family: $font__terc;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: $gray__color;
+    letter-spacing: 1px;
+}
+
+.buttons {
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+
+    .btn__project {
+        background-color: transparent;
+        border: 1px solid $gray__color;
+        height: 4.3rem;
+        width: 16rem;
+        border-radius: 6px;
+        color: $gray__color;
+        font-family: $font__prin;
+        font-size: 1.4rem;
+
+        &:hover {
+            background-color: $prim__color;
+            color: $blue__dark;
+            border: none;
+            font-weight: 700;
+            transition: all 300ms ease-in-out;
+        }
+    }
+
+}
+
+.projects__card2,
+.projects__card4 {
+    margin-top: -14rem;
+    height: 100%;
+}
