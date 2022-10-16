@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" href="./src/img/logo.svg" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -59,21 +60,14 @@
           <a href="#abt">About</a>
         </nav>
 
-                  <!-- icon close-->
-          <div class="close" id="close">
-            
-            <div></div>
-            <div></div>
-        </div>
-        
         
 
         <!-- burger menu -->     
         <div class="container-menu" id="container-menu">
           <button class="btn-burg" id="btn-burg">
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="line1__btn-burg"></div>
+            <div class="line2__btn-burg"></div>
+            <div class="line3__btn-burg"></div>
           </button>
         </div>
         
@@ -106,7 +100,7 @@
                 <p class="hero__tech">React • javaScript • HTML5 • CSS3 • SASS • GULP • Git • Github</p>
 
            <p class="hero__desc">
-                  I have knowledge on programming web applications and graphic design.
+                  I am a frontend developer passionate about technology, with knowledge on programming, wiht experience on  web applications and graphic design.
                 </p>         
             </div>
 
@@ -126,13 +120,50 @@
         <div class="projects" >
 
           <div class="projects__card1 project">
-              <a href="https://remo-jobs.netlify.app" target="_blank">
-                <img src="./src/img/remo-jobs-thumbnail.jpg" alt="remo jobs thumbnail" />
+            <div class="image__project1">
+                <a href="https://remo-jobs.netlify.app" target="_blank">              
               </a>
-              <h4 class="subtitle__project">Remo jobs</h4>
+            </div>      
+
+             <div class="info__project"> 
+                <h4 class="subtitle__project">Remo jobs</h4>
+                <p class="projects__desc">
+                  Remo jobs is an app for seraching IT industry jobs’s . This app use a
+                  remotive API.
+                </p>
+                <p class="projects__techno">Created with React</p>
+
+                <div class="buttons">
+                  <div>
+                    <a href="https://remo-jobs.netlify.app" target="_blank">
+                      <button class="btn__project">Demo</button>
+                    </a>
+                  </div>
+                  
+                  <div>
+                    <a href="https://github.com/SalvasDev/remo-jobs" target="_blank">
+                      <button class="btn__project">Code</button>
+                    </a>
+                  </div>
+
+                </div>
+             </div>             
+             
+          </div>
+
+
+        <!-- Card 2 -->
+        <div class="projects__card2 project">
+                      
+          <div class="image__project2">
+            <a href="https://weather-app-sal.netlify.app/" target="_blank">
+            </a>
+          </div>
+
+          <div  class="info__project">
+             <h4 class="subtitle__project">Weather app</h4>
               <p class="projects__desc">
-                Remo jobs is an app for seraching IT industry jobs’s . This app use a
-                remotive API.
+                This is an app for consulting the weather in many cities of the world.
               </p>
               <p class="projects__techno">Created with React</p>
 
@@ -140,34 +171,12 @@
                 <a href="https://remo-jobs.netlify.app" target="_blank">
                   <button class="btn__project">Demo</button>
                 </a>
-                <a href="https://github.com/SalvasDev/remo-jobs" target="_blank">
+                <a href="https://weather-app-sal.netlify.app/" target="_blank">
                   <button class="btn__project">Code</button>
                 </a>
-              </div>
-             
+              </div>            
           </div>
-
-
-        <!-- Card 4 -->
-        <div class="projects__card4 project">
-          <a href="https://weather-app-sal.netlify.app/" target="_blank">
-            <img src="./src/img/weather-thmnail2.jpg" alt="Weather consult app" />
-          </a>
-          <h4 class="subtitle__project">Weather app</h4>
-          <p class="projects__desc">
-            This is an app for consulting the weather in many cities of the world with a serch in an API.
-          </p>
-          <p class="projects__techno">Created with React</p>
-
-          <div class="buttons">
-            <a href="https://remo-jobs.netlify.app" target="_blank">
-              <button class="btn__project">Demo</button>
-            </a>
-            <a href="https://weather-app-sal.netlify.app/" target="_blank">
-              <button class="btn__project">Code</button>
-            </a>
-          </div>
-
+         
         </div>
        
 
@@ -175,47 +184,56 @@
         
           <!-- Card 3 -->
         <div class="projects__card3 project">
-          <a href="https://country-quiz-salvadev.netlify.app" target="_blank">
-            <img src="./src/img/country-thumbnail.jpg" alt="countries game thumbnail" />
-          </a>
-          <h4 class="subtitle__project">Country quiz</h4>
-          <p class="projects__desc">
-            Country quiz is a basic game for memorize name of capital countries and their flags.
-          </p>
-          <p class="projects__techno">Created with React</p>
 
-          <div class="buttons">
-            <a href="https://country-quiz-salvadev.netlify.app" target="_blank">
-            <button class="btn__project">Demo</button>
-          </a>
-          <a href="https://github.com/SalvasDev/country-quiz" target="_blank">
-            <button class="btn__project">Code</button>
-          </a>
+             <div class="image__project3">
+                <a href="https://country-quiz-salvadev.netlify.app" target="_blank">
+                </a>
+              </div>
+
+            <div  class="info__project"> 
+              <h4 class="subtitle__project">Country quiz</h4>
+              <p class="projects__desc">
+                Country quiz is a basic game for memorize name of capital countries and their flags.
+              </p>
+              <p class="projects__techno">Created with React</p>
+
+              <div class="buttons">
+                <a href="https://country-quiz-salvadev.netlify.app" target="_blank">
+                <button class="btn__project">Demo</button>
+              </a>
+                <a href="https://github.com/SalvasDev/country-quiz" target="_blank">
+                  <button class="btn__project">Code</button>
+                </a>
+              </div>
           </div>
-          
         </div>  
 
 
-         <!-- Card 2 -->
-        <div class="projects__card2 project">   
-          <a href="https://todo-app-salvasdev.netlify.app" target="_blank">
-            <img src="./src/img/todo-thumbnail3.jpg" alt=" todo list thumbnail" />
-          </a>
-          <h4 class="subtitle__project">Todo list</h4>
-          <p class="projects__desc">
-            Todo list is a simple but very usefull to save actions in localstorage. 
-          </p>
-          <p class="projects__techno">Created with React</p>
-          <div class="buttons">
-              <a href="https://todo-app-salvasdev.netlify.app" target="_blank">
-            <button class="btn__project">Demo</button>
-          </a>
-          <a href="https://github.com/SalvasDev/todo-app" target="_blank">
-            <button class="btn__project">Code</button>
-          </a>
+         <!-- Card 4 -->
+        <div class="projects__card4 project">
 
+
+          <div class="image__project4">
+            <a href="https://todo-app-salvasdev.netlify.app" target="_blank">
+            </a>
           </div>
-        
+
+           <div  class="info__project"> 
+              <h4 class="subtitle__project">Todo list</h4>
+              <p class="projects__desc">
+                Todo list is a simple but very usefull app to save actions in local storage. 
+              </p>
+              <p class="projects__techno">Created with React</p>
+              <div class="buttons">
+                  <a href="https://todo-app-salvasdev.netlify.app" target="_blank">
+                <button class="btn__project">Demo</button>
+                </a>
+                <a href="https://github.com/SalvasDev/todo-app" target="_blank">
+                  <button class="btn__project">Code</button>
+                </a>
+              </div>
+            </div>  
+
         </div>
 
 
@@ -242,7 +260,7 @@
     </div>  
     
     <!-- Footer section-->
-    <section>
+    <section class="sect__footer">
           <div class="footer">
               <p>© 2022 Salvador Sánchez. All rights reserved</p>
           </div>
@@ -252,6 +270,5 @@
   <script src="build/js/bundle.js"></script>
   </body>
 </html>
-
 
 

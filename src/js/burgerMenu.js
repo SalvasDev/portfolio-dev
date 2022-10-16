@@ -1,35 +1,35 @@
-// import './app.js';
 
-
-//  get id burger menu
+//  Get id burger menu
 document.querySelector('.btn-burg').addEventListener('click', animateBars);
+
+var line1__bars = document.querySelector('.line1__btn-burg');
+var line2__bars = document.querySelector('.line2__btn-burg');
+var line3__bars = document.querySelector('.line3__btn-burg');
+
+
+function animateBars() {
+    line1__bars.classList.toggle('activeline1__btn-burg');
+    line2__bars.classList.toggle('activeline2__btn-burg');
+    line3__bars.classList.toggle('activeline3__btn-burg');
+}
+
 
 
 const contMenu = document.getElementById('container-menu');
-const closeIcon = document.getElementById('close');
 const showMenu = document.getElementById('showMenuMobile');
-const btnBurger = document.getElementById('btn-burg');
+
+var bodyControl = document.querySelector('body');
+
 
 contMenu.onclick = showingMenu;
-closeIcon.onclick = hide;
 
 function showingMenu(e) {
     e.preventDefault();
-    contMenu.style.padding = '26px 52px 100vw 25vw';
-    showMenu.style.display = 'flex';
-    btnBurger.style.display = 'none';
-    // closeIcon.style.display = 'block';
+    contMenu.classList.toggle('active__container');
+    showMenu.classList.toggle('active__menu');
+    bodyControl.classList.toggle('block__scroll');
 }
 
-function hide(e) {
-    e.preventDefault();
-    contMenu.style.padding = '0';
-    closeIcon.style.display = 'none';
-    showMenu.style.display = 'none';
-    // btnBurger.style.display = 'flex'
-    // fixNavigation();
-
-}
 
 
 

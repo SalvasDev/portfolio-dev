@@ -9,7 +9,7 @@ const paths = {
     js: 'src/js/**/*.js'
 }
 
-function css(done) {
+function css() {
     return src('src/scss/app.scss')
         .pipe(sass({
             outputStyle: 'expanded'

@@ -1,0 +1,31 @@
+@mixin desk__1160 {
+    @media(max-width: 1160px) {
+        @content;
+    }
+}
+
+@mixin desk__930 {
+    @media(max-width: 930px) {
+        @content;
+    }
+}
+
+@mixin tablet__768 {
+    @media(max-width: 768px) {
+        @content;
+    }
+}
+
+
+@mixin mob__490 {
+    @media(max-width: 490px) {
+        @content;
+    }
+}
+
+
+@mixin mob__375 {
+    @media(max-width: 375px) {
+        @content;
+    }
+}

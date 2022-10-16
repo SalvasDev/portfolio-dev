@@ -1,15 +1,30 @@
 .container {
     width: min(90%, 900px);
     margin: 12rem auto 0 auto;
+
+    @include tablet__768 {
+        width: min(90%, 768px);
+        margin-right: 2rem;
+    }
+
+    @include mob__375 {
+        width: min(90%, 375px);
+    }
+
+
 }
 
 .hero {
     text-align: center;
+
+
 }
+
 
 .hero__group {
     display: grid;
     grid-template-columns: 1fr 3%;
+
 }
 
 h1 {
@@ -18,6 +33,17 @@ h1 {
     letter-spacing: -.7rem;
     text-align: center;
     margin: 0 0 16px;
+
+    @include tablet__768 {
+        font-size: 10rem;
+    }
+
+    @include mob__490 {
+        font-size: 8rem;
+    }
+
+
+
 }
 
 
@@ -29,7 +55,7 @@ h1 {
 }
 
 .span__title::before {
-    background: linear-gradient(90deg, var(--start-color), var(--end-color));
+    background: linear-gradient(0deg, var(--start-color), var(--end-color));
     content: var(--content);
     position: absolute;
     inset: 0;
@@ -62,35 +88,23 @@ h1 {
     font-weight: 300;
     margin-bottom: 0;
     letter-spacing: 1px;
+
+    @include mob__375 {
+        margin-top: -5rem;
+        font-size: 1.8rem;
+    }
 }
 
-.hero__title {
-    background: $grad__color;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-family: $font__prin;
-    font-weight: 700;
-    font-size: 14rem;
-    margin: 0;
-}
+// .hero__title {
+//     background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     -webkit-background-clip: text;
+//     font-family: $font__prin;
+//     font-weight: 700;
+//     font-size: 14rem;
+//     margin: 0;
+// }
 
-.hero__subtitle {
-    font-family: $font__prin;
-    font-weight: 700;
-    font-size: 6rem;
-    color: $neutro_color;
-    margin: 0;
-    line-height: 70px;
-}
-
-.hero__available {
-    font-family: $font__prin;
-    font-weight: 300;
-    font-size: 2rem;
-    margin-top: 4rem;
-    letter-spacing: 1px;
-}
 
 .hero__tech {
     font-family: $font__prin;
@@ -99,6 +113,22 @@ h1 {
     color: $gral__color;
     word-spacing: 3px;
     margin-top: 4rem;
+
+    @include tablet__768 {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+
+    @include mob__490 {
+        line-height: 2.8rem;
+        margin-top: 0;
+    }
+
+    @include mob__375 {
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+        margin-top: 0;
+    }
 }
 
 .hero__desc {
@@ -108,9 +138,15 @@ h1 {
     color: $gray__color;
     line-height: 2.7rem;
     letter-spacing: .5px;
-    width: 80%;
+    width: 70%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 4rem;
     margin-bottom: 14rem;
+
+    @include mob__375 {
+        font-size: 1.6rem;
+        width: 90%;
+    }
+
 }

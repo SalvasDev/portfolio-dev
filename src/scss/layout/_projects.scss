@@ -5,20 +5,83 @@
     column-gap: 9.5rem;
     row-gap: 8rem;
 
-
-    .projects__desc {
-        width: 90%;
-        font-family: $font__terc;
-        color: $gray__color;
-        font-weight: 300;
-        font-size: 1.4rem;
-        letter-spacing: 1px;
-        line-height: 21px;
-        margin-left: 2rem;
-        margin-top: 1.4rem;
-
+    @include desk__1160 {
+        width: min(90%, 450px);
+        column-gap: 4rem;
     }
+
+    @include desk__930 {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    @include mob__490 {
+        width: min(100%, 490px);
+    }
+
+    @include mob__375 {
+        margin-top: 0;
+        width: 100%;
+    }
+
+
 }
+
+.projects__desc {
+    width: 90%;
+    font-family: $font__terc;
+    color: $gray__color;
+    font-weight: 300;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    line-height: 21px;
+    margin-left: 2rem;
+    margin-top: 1.4rem;
+
+}
+
+
+.image__project1,
+.image__project2,
+.image__project3,
+.image__project4 {
+    height: 307px;
+    width: 100%;
+    background-repeat: no-repeat repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include desk__930 {
+        height: 100%;
+    }
+
+    @include tablet__768 {
+        width: 100%;
+        background-position: top;
+    }
+
+}
+
+.image__project1 {
+    background-image: url("../../src/img/remo-jobs-thumbnail.jpg");
+}
+
+
+.image__project2 {
+    background-image: url("../../src/img//weather-thmnail2.jpg");
+}
+
+
+.image__project3 {
+    background-image: url("../../src/img//country-thumbnail.jpg");
+}
+
+
+.image__project4 {
+    background-image: url("../../src/img/todo-thumbnail3.jpg");
+}
+
 
 .subtitle {
     font-family: $font__sec;
@@ -30,14 +93,54 @@
 
 .subtitle:first-of-type {
     margin-top: 14rem;
+
+    @include mob__375 {
+        margin-top: 4rem;
+    }
+
 }
 
 
 .project {
     background-color: transparent;
 
+    @include desk__930 {
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        height: 200px;
+    }
+
+    @include tablet__768 {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+    }
+
+
+    @include mob__490 {
+        width: min(100%, 490px);
+        margin-right: 0;
+    }
+
+    @include mob__375 {
+        width: min(100%, 375px);
+    }
+
     &:hover {
         background-color: $blue__dark;
+    }
+
+}
+
+
+
+
+.info__project {
+
+    @include desk__930 {
+        background-color: $blue__dark;
+        height: 100%;
     }
 
 }
@@ -66,8 +169,17 @@
     margin-left: 2rem;
     margin-bottom: 3rem;
     display: flex;
-    justify-content: space-between;
+    column-gap: 4rem;
     margin-right: 2rem;
+    width: 90%;
+
+    @include desk__1160 {
+        column-gap: 2rem;
+    }
+
+    @include mob__490 {
+        width: 100%;
+    }
 
     .btn__project {
         background-color: transparent;
@@ -78,6 +190,14 @@
         color: $gray__color;
         font-family: $font__prin;
         font-size: 1.4rem;
+
+        @include mob__490 {
+            width: 14rem;
+        }
+
+        @include mob__375 {
+            width: 13.5rem;
+        }
 
         &:hover {
             background-color: $prim__color;
@@ -90,8 +210,19 @@
 
 }
 
+
+
 .projects__card2,
 .projects__card4 {
     margin-top: -14rem;
     height: 100%;
+
+    @include desk__930 {
+        margin-top: 0;
+        height: 200px;
+    }
+
+    @include tablet__768 {
+        height: 400px;
+    }
 }
